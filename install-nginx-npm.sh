@@ -12,7 +12,7 @@ mkdir /home/nginx-proxy/letsencrypt
 cp library/docker-compose.yml /home/nginx-proxy/
 docker network create npm-nw
 docker network create npm-internal
-docker-compose up -d
+cd /home/nginx-proxy | docker-compose up -d
 echo " -------------------------------------------- "
 echo "  Dashboard NGINX NPM http://ip-address:81    "
 echo "  Email Login : admin@example.com	 	    "
